@@ -1,0 +1,16 @@
+PODS:
+  - VK-ios-sdk (1.6.2)
+
+DEPENDENCIES:
+  - VK-ios-sdk
+
+SPEC REPOS:
+  trunk:
+    - VK-ios-sdk
+
+SPEC CHECKSUMS:
+  VK-ios-sdk: 5bcf00a2014a7323f98db9328b603d4f96635caa
+
+PODFILE CHECKSUM: ce72750e69ed9bcb1a0db7d6907b0f3b2e2c6598
+
+COCOAPODS: 1.10.1
