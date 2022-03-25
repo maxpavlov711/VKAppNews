@@ -12,6 +12,8 @@
 		5A7AE77427ED15650098D462 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7AE77327ED15650098D462 /* FeedViewController.storyboard */; };
 		5A7AE77827EDD1890098D462 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AE77727EDD1890098D462 /* NetworkService.swift */; };
 		5A7AE77A27EDD2710098D462 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AE77927EDD2710098D462 /* API.swift */; };
+		5A7AE77D27EDFD440098D462 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AE77C27EDFD440098D462 /* FeedResponse.swift */; };
+		5A7AE77F27EE0FBB0098D462 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AE77E27EE0FBB0098D462 /* NetworkDataFetcher.swift */; };
 		5AF2396627ECAEAE00949896 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2396527ECAEAE00949896 /* AppDelegate.swift */; };
 		5AF2396827ECAEAE00949896 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2396727ECAEAE00949896 /* SceneDelegate.swift */; };
 		5AF2396A27ECAEAE00949896 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2396927ECAEAE00949896 /* AuthViewController.swift */; };
@@ -29,6 +31,8 @@
 		5A7AE77327ED15650098D462 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
 		5A7AE77727EDD1890098D462 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		5A7AE77927EDD2710098D462 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		5A7AE77C27EDFD440098D462 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
+		5A7AE77E27EE0FBB0098D462 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		5AF2396227ECAEAE00949896 /* VKAppNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKAppNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF2396527ECAEAE00949896 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AF2396727ECAEAE00949896 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,14 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		5A7AE77B27EDFD2E0098D462 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A7AE77C27EDFD440098D462 /* FeedResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5AF2395927ECAEAE00949896 = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +113,9 @@
 			children = (
 				5AF2396527ECAEAE00949896 /* AppDelegate.swift */,
 				5AF2396727ECAEAE00949896 /* SceneDelegate.swift */,
+				5AF2397C27ECD32700949896 /* Services */,
 				5A7AE77627ED15DA0098D462 /* Auth */,
 				5A7AE77527ED15CB0098D462 /* FeedViewController */,
-				5AF2397C27ECD32700949896 /* Services */,
 				5AF2396E27ECAEB000949896 /* Assets.xcassets */,
 				5AF2397027ECAEB000949896 /* LaunchScreen.storyboard */,
 				5AF2397327ECAEB000949896 /* Info.plist */,
@@ -114,9 +126,11 @@
 		5AF2397C27ECD32700949896 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5A7AE77B27EDFD2E0098D462 /* Models */,
 				5AF2397927ECD31C00949896 /* AuthService.swift */,
 				5A7AE77727EDD1890098D462 /* NetworkService.swift */,
 				5A7AE77927EDD2710098D462 /* API.swift */,
+				5A7AE77E27EE0FBB0098D462 /* NetworkDataFetcher.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -246,11 +260,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7AE77D27EDFD440098D462 /* FeedResponse.swift in Sources */,
 				5AF2396A27ECAEAE00949896 /* AuthViewController.swift in Sources */,
 				5AF2396627ECAEAE00949896 /* AppDelegate.swift in Sources */,
 				5A7AE77227ED15550098D462 /* FeedViewController.swift in Sources */,
 				5AF2396827ECAEAE00949896 /* SceneDelegate.swift in Sources */,
 				5A7AE77827EDD1890098D462 /* NetworkService.swift in Sources */,
+				5A7AE77F27EE0FBB0098D462 /* NetworkDataFetcher.swift in Sources */,
 				5AF2397A27ECD31C00949896 /* AuthService.swift in Sources */,
 				5A7AE77A27EDD2710098D462 /* API.swift in Sources */,
 			);
