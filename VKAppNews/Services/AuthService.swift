@@ -29,6 +29,10 @@ class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
     
     weak var delegate: AuthServiceDelegate?
     
+    var token: String? {
+        return VKSdk.accessToken().accessToken
+    }
+    
     func wakeUpSession() {
         let scope = ["offline"]
         VKSdk.wakeUpSession(scope) { [delegate] satate, error in
