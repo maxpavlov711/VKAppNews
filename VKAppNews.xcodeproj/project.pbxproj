@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5A7AE77027ECD5860098D462 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7AE76F27ECD5860098D462 /* AuthViewController.storyboard */; };
-		5A7AE77227ED15550098D462 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AE77127ED15550098D462 /* FeedViewController.swift */; };
-		5A7AE77427ED15650098D462 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7AE77327ED15650098D462 /* FeedViewController.storyboard */; };
 		5A7AE77827EDD1890098D462 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AE77727EDD1890098D462 /* NetworkService.swift */; };
 		5A7AE77A27EDD2710098D462 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AE77927EDD2710098D462 /* API.swift */; };
 		5A7AE77D27EDFD440098D462 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AE77C27EDFD440098D462 /* FeedResponse.swift */; };
@@ -36,8 +34,6 @@
 		223446DA35830CA83DAB998E /* Pods-VKAppNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKAppNews.release.xcconfig"; path = "Target Support Files/Pods-VKAppNews/Pods-VKAppNews.release.xcconfig"; sourceTree = "<group>"; };
 		548560A42BB965A9CBFE9B04 /* Pods_VKAppNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKAppNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7AE76F27ECD5860098D462 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
-		5A7AE77127ED15550098D462 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		5A7AE77327ED15650098D462 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
 		5A7AE77727EDD1890098D462 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		5A7AE77927EDD2710098D462 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		5A7AE77C27EDFD440098D462 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
@@ -80,15 +76,6 @@
 				548560A42BB965A9CBFE9B04 /* Pods_VKAppNews.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5A7AE77527ED15CB0098D462 /* FeedViewController */ = {
-			isa = PBXGroup;
-			children = (
-				5A7AE77127ED15550098D462 /* FeedViewController.swift */,
-				5A7AE77327ED15650098D462 /* FeedViewController.storyboard */,
-			);
-			path = FeedViewController;
 			sourceTree = "<group>";
 		};
 		5A7AE77627ED15DA0098D462 /* Auth */ = {
@@ -158,7 +145,6 @@
 				5AF2397C27ECD32700949896 /* Services */,
 				5A7AE78027EF565F0098D462 /* NewsFeed */,
 				5A7AE77627ED15DA0098D462 /* Auth */,
-				5A7AE77527ED15CB0098D462 /* FeedViewController */,
 				5AF2396E27ECAEB000949896 /* Assets.xcassets */,
 				5AF2397027ECAEB000949896 /* LaunchScreen.storyboard */,
 				5AF2397327ECAEB000949896 /* Info.plist */,
@@ -252,7 +238,6 @@
 				5A7AE79027EF5CF10098D462 /* NewsfeedViewController.storyboard in Resources */,
 				5AF2396F27ECAEB000949896 /* Assets.xcassets in Resources */,
 				5A7AE79527F224BA0098D462 /* NewsfeedCell.xib in Resources */,
-				5A7AE77427ED15650098D462 /* FeedViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +295,6 @@
 				5AF2396A27ECAEAE00949896 /* AuthViewController.swift in Sources */,
 				5AF2396627ECAEAE00949896 /* AppDelegate.swift in Sources */,
 				5A7AE78827EF56B50098D462 /* NewsfeedPresenter.swift in Sources */,
-				5A7AE77227ED15550098D462 /* FeedViewController.swift in Sources */,
 				5A7AE78A27EF56B50098D462 /* NewsfeedRouter.swift in Sources */,
 				5AF2396827ECAEAE00949896 /* SceneDelegate.swift in Sources */,
 				5A7AE77827EDD1890098D462 /* NetworkService.swift in Sources */,
