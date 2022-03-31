@@ -40,7 +40,7 @@
                         </subviews>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vii-Wr-bg9">
-                        <rect key="frame" x="5" y="52" width="405" height="107"/>
+                        <rect key="frame" x="5" y="52" width="405" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
@@ -120,6 +120,10 @@
                             </view>
                         </subviews>
                     </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4vF-sk-Dlf" customClass="WebImageView" customModule="VKAppNews" customModuleProvider="target">
+                        <rect key="frame" x="5" y="109" width="405" height="52"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    </imageView>
                 </subviews>
             </tableViewCellContentView>
             <connections>
@@ -128,6 +132,7 @@
                 <outlet property="iconImageView" destination="IBe-GI-u8Q" id="6qg-2W-ubh"/>
                 <outlet property="likesLabel" destination="aZd-ub-7DR" id="G0x-kN-fQM"/>
                 <outlet property="nameLabel" destination="T09-2N-b44" id="Ypa-qo-UMY"/>
+                <outlet property="postImageView" destination="4vF-sk-Dlf" id="IG4-GQ-N9G"/>
                 <outlet property="postLabel" destination="vii-Wr-bg9" id="ONs-Ra-igR"/>
                 <outlet property="sharesLabel" destination="dLe-Mz-AWO" id="Gz6-Te-w9B"/>
                 <outlet property="viewsLabel" destination="82W-N4-vdB" id="Ppv-Iv-1eu"/>
