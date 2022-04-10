@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5A38FF4727F33C3B0033CAEA /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38FF4627F33C3B0033CAEA /* WebImageView.swift */; };
+		5A3E1F2D2802249D00A0CCC0 /* NewsfeedCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E1F2C2802249D00A0CCC0 /* NewsfeedCodeCell.swift */; };
+		5A3E1F2F28022ACC00A0CCC0 /* Contrains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E1F2E28022ACC00A0CCC0 /* Contrains.swift */; };
+		5A3E1F312803720300A0CCC0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E1F302803720300A0CCC0 /* Constants.swift */; };
 		5A7AE77027ECD5860098D462 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7AE76F27ECD5860098D462 /* AuthViewController.storyboard */; };
 		5A7AE77827EDD1890098D462 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AE77727EDD1890098D462 /* NetworkService.swift */; };
 		5A7AE77A27EDD2710098D462 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7AE77927EDD2710098D462 /* API.swift */; };
@@ -37,6 +40,9 @@
 		223446DA35830CA83DAB998E /* Pods-VKAppNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKAppNews.release.xcconfig"; path = "Target Support Files/Pods-VKAppNews/Pods-VKAppNews.release.xcconfig"; sourceTree = "<group>"; };
 		548560A42BB965A9CBFE9B04 /* Pods_VKAppNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKAppNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A38FF4627F33C3B0033CAEA /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
+		5A3E1F2C2802249D00A0CCC0 /* NewsfeedCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedCodeCell.swift; sourceTree = "<group>"; };
+		5A3E1F2E28022ACC00A0CCC0 /* Contrains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contrains.swift; sourceTree = "<group>"; };
+		5A3E1F302803720300A0CCC0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5A7AE76F27ECD5860098D462 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
 		5A7AE77727EDD1890098D462 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		5A7AE77927EDD2710098D462 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -89,6 +95,7 @@
 			children = (
 				5A38FF4627F33C3B0033CAEA /* WebImageView.swift */,
 				5AED41AA27FDC12F009B1C73 /* String + Height.swift */,
+				5A3E1F2E28022ACC00A0CCC0 /* Contrains.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -128,9 +135,11 @@
 		5A7AE79127F2244C0098D462 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				5A7AE79427F224BA0098D462 /* NewsfeedCell.xib */,
 				5A7AE79227F224690098D462 /* NewsfeedCell.swift */,
 				5AA8B33027F723A000B851F3 /* NewsfeedCellLayoutCalculator.swift */,
-				5A7AE79427F224BA0098D462 /* NewsfeedCell.xib */,
+				5A3E1F2C2802249D00A0CCC0 /* NewsfeedCodeCell.swift */,
+				5A3E1F302803720300A0CCC0 /* Constants.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -318,6 +327,9 @@
 				5A7AE77827EDD1890098D462 /* NetworkService.swift in Sources */,
 				5A7AE78B27EF56B50098D462 /* NewsfeedModels.swift in Sources */,
 				5AA8B33127F723A000B851F3 /* NewsfeedCellLayoutCalculator.swift in Sources */,
+				5A3E1F312803720300A0CCC0 /* Constants.swift in Sources */,
+				5A3E1F2F28022ACC00A0CCC0 /* Contrains.swift in Sources */,
+				5A3E1F2D2802249D00A0CCC0 /* NewsfeedCodeCell.swift in Sources */,
 				5A38FF4727F33C3B0033CAEA /* WebImageView.swift in Sources */,
 				5A7AE77F27EE0FBB0098D462 /* NetworkDataFetcher.swift in Sources */,
 				5A7AE78927EF56B50098D462 /* NewsfeedWorker.swift in Sources */,
