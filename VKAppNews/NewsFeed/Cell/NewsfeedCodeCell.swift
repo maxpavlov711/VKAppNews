@@ -43,7 +43,7 @@ final class NewsfeedCodeCell: UITableViewCell {
     let moreTextButton: UIButton = {
         let button = UIButton()
         button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .medium)
-        button.setTitleColor(.gray, for: .normal)
+        button.setTitleColor(#colorLiteral(red: 0.4012392163, green: 0.6231879592, blue: 0.8316264749, alpha: 1), for: .normal)
         button.contentHorizontalAlignment = .left
         button.contentVerticalAlignment = .center
         button.setTitle("Показать полность...", for: .normal)
@@ -354,8 +354,8 @@ final class NewsfeedCodeCell: UITableViewCell {
     }
     
     private func overlayFirstLayer() {
-        
-        addSubview(cardView)
+        contentView.addSubview(cardView)
+//        addSubview(cardView)
         
         // cardView contrains
         cardView.fillSuperview(padding: Constants.cardInsets)
