@@ -33,6 +33,8 @@
 		5AF2396F27ECAEB000949896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF2396E27ECAEB000949896 /* Assets.xcassets */; };
 		5AF2397227ECAEB000949896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF2397027ECAEB000949896 /* LaunchScreen.storyboard */; };
 		5AF2397A27ECD31C00949896 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2397927ECD31C00949896 /* AuthService.swift */; };
+		5AFB256F28085D7D0034A19A /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB256E28085D7D0034A19A /* GalleryCollectionView.swift */; };
+		5AFB257128085EAA0034A19A /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB257028085EAA0034A19A /* GalleryCollectionViewCell.swift */; };
 		FDCC4D827BEDCB18EA019FAE /* Pods_VKAppNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 548560A42BB965A9CBFE9B04 /* Pods_VKAppNews.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		5AF2397127ECAEB000949896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AF2397327ECAEB000949896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AF2397927ECD31C00949896 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		5AFB256E28085D7D0034A19A /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
+		5AFB257028085EAA0034A19A /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		F186C4C6B380881EEE745C6F /* Pods-VKAppNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKAppNews.debug.xcconfig"; path = "Target Support Files/Pods-VKAppNews/Pods-VKAppNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +124,7 @@
 		5A7AE78027EF565F0098D462 /* NewsFeed */ = {
 			isa = PBXGroup;
 			children = (
+				5AFB256D28085D580034A19A /* GalleryView */,
 				5A7AE79127F2244C0098D462 /* Cell */,
 				5A7AE78F27EF5CF10098D462 /* NewsfeedViewController.storyboard */,
 				5A7AE78527EF56B50098D462 /* NewsfeedViewController.swift */,
@@ -188,6 +193,15 @@
 				5A7AE77E27EE0FBB0098D462 /* NetworkDataFetcher.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		5AFB256D28085D580034A19A /* GalleryView */ = {
+			isa = PBXGroup;
+			children = (
+				5AFB256E28085D7D0034A19A /* GalleryCollectionView.swift */,
+				5AFB257028085EAA0034A19A /* GalleryCollectionViewCell.swift */,
+			);
+			path = GalleryView;
 			sourceTree = "<group>";
 		};
 		968D7670A34C6CFA3784DDDF /* Pods */ = {
@@ -320,6 +334,7 @@
 				5AED41AB27FDC12F009B1C73 /* String + Height.swift in Sources */,
 				5A7AE78C27EF56B50098D462 /* NewsfeedViewController.swift in Sources */,
 				5AF2396A27ECAEAE00949896 /* AuthViewController.swift in Sources */,
+				5AFB257128085EAA0034A19A /* GalleryCollectionViewCell.swift in Sources */,
 				5AF2396627ECAEAE00949896 /* AppDelegate.swift in Sources */,
 				5A7AE78827EF56B50098D462 /* NewsfeedPresenter.swift in Sources */,
 				5A7AE78A27EF56B50098D462 /* NewsfeedRouter.swift in Sources */,
@@ -335,6 +350,7 @@
 				5A7AE78927EF56B50098D462 /* NewsfeedWorker.swift in Sources */,
 				5AF2397A27ECD31C00949896 /* AuthService.swift in Sources */,
 				5A7AE77A27EDD2710098D462 /* API.swift in Sources */,
+				5AFB256F28085D7D0034A19A /* GalleryCollectionView.swift in Sources */,
 				5A7AE79327F224690098D462 /* NewsfeedCell.swift in Sources */,
 				5A7AE78D27EF56B50098D462 /* NewsfeedInteractor.swift in Sources */,
 			);

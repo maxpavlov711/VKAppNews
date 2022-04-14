@@ -50,6 +50,8 @@ final class NewsfeedCodeCell: UITableViewCell {
         return button
     }()
     
+    let galleryCollectrionView = GalleryCollectionView()
+    
     let postImageView: WebImageView = {
         let imageView = WebImageView()
         imageView.backgroundColor = #colorLiteral(red: 0.9117177725, green: 0.918438971, blue: 0.927837193, alpha: 1)
@@ -218,15 +220,22 @@ final class NewsfeedCodeCell: UITableViewCell {
         viewsLabel.text = viewModel.views
         
         postLabel.frame = viewModel.sizes.postLabelFrame
-        postImageView.frame = viewModel.sizes.attachmentFrame
         bottomView.frame = viewModel.sizes.bottomViewFrame
         moreTextButton.frame = viewModel.sizes.moreTextButtonFrame
         
-        if let photoAttachment = viewModel.photoAttachment {
+        if let photoAttachment = viewModel.photoAttachments.first, viewModel.photoAttachments.count == 1 {
             postImageView.set(imageUrl: photoAttachment.photoUrlString)
             postImageView.isHidden = false
+            galleryCollectrionView.isHidden = true
+            postImageView.frame = viewModel.sizes.attachmentFrame
+        } else if viewModel.photoAttachments.count > 1 {
+            galleryCollectrionView.frame = viewModel.sizes.attachmentFrame
+            postImageView.isHidden = true
+            galleryCollectrionView.isHidden = false
+            galleryCollectrionView.set(photos: viewModel.photoAttachments)
         } else {
             postImageView.isHidden = true
+            galleryCollectrionView.isHidden = true
         }
     }
     
@@ -332,6 +341,7 @@ final class NewsfeedCodeCell: UITableViewCell {
         cardView.addSubview(postLabel)
         cardView.addSubview(moreTextButton)
         cardView.addSubview(postImageView)
+        cardView.addSubview(galleryCollectrionView)
         cardView.addSubview(bottomView)
         
         // topView constrains
@@ -347,6 +357,9 @@ final class NewsfeedCodeCell: UITableViewCell {
         // не нужно, так как размеры задаются динамически
         
         // postImageView constrains
+        // не нужно, так как размеры задаются динамически
+        
+        // galleryCollectrionView constrains
         // не нужно, так как размеры задаются динамически
         
         // bottomView constrains
