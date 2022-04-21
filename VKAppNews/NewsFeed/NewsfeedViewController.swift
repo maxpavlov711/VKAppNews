@@ -19,6 +19,8 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic, NewfeedCod
     
     private var feedViewModel = FeedViewModel.init(cells: [])
     
+    private var titleView = TitleView()
+    
     @IBOutlet weak var table: UITableView!
     
     // MARK: Setup
@@ -44,6 +46,7 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic, NewfeedCod
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        setupTopBars()
         
         table.register(UINib(nibName: "NewsfeedCell", bundle: nil), forCellReuseIdentifier: NewsfeedCell.reuseID)
         table.register(NewsfeedCodeCell.self, forCellReuseIdentifier: NewsfeedCodeCell.reuseId)
@@ -51,7 +54,15 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic, NewfeedCod
         table.separatorStyle = .none
         table.backgroundColor = .clear
         view.backgroundColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
+        
         interactor?.makeRequest(request: Newsfeed.Model.Request.RequestType.getNewsfeed)
+        interactor?.makeRequest(request: Newsfeed.Model.Request.RequestType.getUser)
+    }
+    
+    private func setupTopBars() {
+        self.navigationController?.hidesBarsOnSwipe = true
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationItem.titleView = titleView
     }
     
     func displayData(viewModel: Newsfeed.Model.ViewModel.ViewModelData) {
@@ -59,6 +70,8 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic, NewfeedCod
         case .displayNewsfeed(feedViewModel: let feedViewModel):
             self.feedViewModel = feedViewModel
             table.reloadData()
+        case .displayUser(userViewModel: let userViewModel):
+            titleView.set(userViewModel: userViewModel)
         }
     }
     
