@@ -92,6 +92,12 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic, NewfeedCod
         }
     }
     
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if scrollView.contentOffset.y > scrollView.contentSize.height / 1.1 {
+            interactor?.makeRequest(request: Newsfeed.Model.Request.RequestType.getNextBatch)
+        }
+    }
+    
     // MARK: - NewfeedCodeCellDelegate
     func revealPost(for cell: NewsfeedCodeCell) {
         guard let indexPath = table.indexPath(for: cell) else { return }
