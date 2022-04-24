@@ -23,12 +23,14 @@ enum Newsfeed {
             enum ResponseType {
                 case presentNewsfeed(feed: FeedResponse, revealPostIds: [Int])
                 case presentUserInfo(user: UserResponse?)
+                case presentFooterLoader
             }
         }
         struct ViewModel {
             enum ViewModelData {
                 case displayNewsfeed(feedViewModel: FeedViewModel)
                 case displayUser(userViewModel: UserViewModel)
+                case dispayFooterLoader
             }
         }
     }
@@ -61,4 +63,5 @@ struct FeedViewModel {
     }
     
     let cells: [Cell]
+    let footerTitle: String?
 }

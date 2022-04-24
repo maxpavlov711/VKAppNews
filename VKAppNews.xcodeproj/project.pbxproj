@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A1929A928157B2600D414AD /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1929A828157B2600D414AD /* FooterView.swift */; };
+		5A1929AB2815802B00D414AD /* Localizable.stringdict.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 5A1929AA2815802B00D414AD /* Localizable.stringdict.stringsdict */; };
 		5A38FF4727F33C3B0033CAEA /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A38FF4627F33C3B0033CAEA /* WebImageView.swift */; };
 		5A3E1F2D2802249D00A0CCC0 /* NewsfeedCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E1F2C2802249D00A0CCC0 /* NewsfeedCodeCell.swift */; };
 		5A3E1F2F28022ACC00A0CCC0 /* Contrains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E1F2E28022ACC00A0CCC0 /* Contrains.swift */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		223446DA35830CA83DAB998E /* Pods-VKAppNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKAppNews.release.xcconfig"; path = "Target Support Files/Pods-VKAppNews/Pods-VKAppNews.release.xcconfig"; sourceTree = "<group>"; };
 		548560A42BB965A9CBFE9B04 /* Pods_VKAppNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKAppNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A1929A828157B2600D414AD /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		5A1929AA2815802B00D414AD /* Localizable.stringdict.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringdict.stringsdict; sourceTree = "<group>"; };
 		5A38FF4627F33C3B0033CAEA /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
 		5A3E1F2C2802249D00A0CCC0 /* NewsfeedCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedCodeCell.swift; sourceTree = "<group>"; };
 		5A3E1F2E28022ACC00A0CCC0 /* Contrains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contrains.swift; sourceTree = "<group>"; };
@@ -102,6 +106,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5A1929A728157B0B00D414AD /* FooterView */ = {
+			isa = PBXGroup;
+			children = (
+				5A1929A828157B2600D414AD /* FooterView.swift */,
+			);
+			path = FooterView;
+			sourceTree = "<group>";
+		};
 		5A38FF4527F33C100033CAEA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +145,7 @@
 		5A7AE78027EF565F0098D462 /* NewsFeed */ = {
 			isa = PBXGroup;
 			children = (
+				5A1929A728157B0B00D414AD /* FooterView */,
 				5AD5A1D92811F3F8004C187D /* TitleView */,
 				5AFB256D28085D580034A19A /* GalleryView */,
 				5A7AE79127F2244C0098D462 /* Cell */,
@@ -198,6 +211,7 @@
 				5AF2396E27ECAEB000949896 /* Assets.xcassets */,
 				5AF2397027ECAEB000949896 /* LaunchScreen.storyboard */,
 				5AF2397327ECAEB000949896 /* Info.plist */,
+				5A1929AA2815802B00D414AD /* Localizable.stringdict.stringsdict */,
 			);
 			path = VKAppNews;
 			sourceTree = "<group>";
@@ -298,6 +312,7 @@
 				5A7AE79027EF5CF10098D462 /* NewsfeedViewController.storyboard in Resources */,
 				5AF2396F27ECAEB000949896 /* Assets.xcassets in Resources */,
 				5A7AE79527F224BA0098D462 /* NewsfeedCell.xib in Resources */,
+				5A1929AB2815802B00D414AD /* Localizable.stringdict.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AF6D2D9280C2B5B00722E92 /* RowLayout.swift in Sources */,
+				5A1929A928157B2600D414AD /* FooterView.swift in Sources */,
 				5A7AE77D27EDFD440098D462 /* FeedResponse.swift in Sources */,
 				5AED41AB27FDC12F009B1C73 /* String + Height.swift in Sources */,
 				5A7AE78C27EF56B50098D462 /* NewsfeedViewController.swift in Sources */,

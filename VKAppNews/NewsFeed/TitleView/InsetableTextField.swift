@@ -21,7 +21,7 @@ class InsetableTextField: UITextField {
         layer.cornerRadius = 10
         layer.masksToBounds = true
         
-        let image = UIImage(systemName: "magnifyingglass")
+        let image = UIImage(named: "search")
         leftView = UIImageView(image: image)
         leftView?.frame = CGRect(x: 0, y: 0, width: 14, height: 14)
         leftViewMode = .always

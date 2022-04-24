@@ -17,10 +17,12 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic, NewfeedCod
     var interactor: NewsfeedBusinessLogic?
     var router: (NSObjectProtocol & NewsfeedRoutingLogic)?
     
-    private var feedViewModel = FeedViewModel.init(cells: [])
+    private var feedViewModel = FeedViewModel.init(cells: [], footerTitle: nil)
     
     @IBOutlet weak var table: UITableView!
     private var titleView = TitleView()
+    private lazy var footerView =  FooterView()
+    
     private var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
@@ -53,7 +55,7 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic, NewfeedCod
         setupTable()
         setupTopBars()
 
-        view.backgroundColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
         
         interactor?.makeRequest(request: Newsfeed.Model.Request.RequestType.getNewsfeed)
         interactor?.makeRequest(request: Newsfeed.Model.Request.RequestType.getUser)
@@ -69,6 +71,7 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic, NewfeedCod
         table.backgroundColor = .clear
         
         table.addSubview(refreshControl)
+        table.tableFooterView = footerView
     }
     
     private func setupTopBars() {
@@ -85,10 +88,13 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic, NewfeedCod
         switch viewModel {
         case .displayNewsfeed(feedViewModel: let feedViewModel):
             self.feedViewModel = feedViewModel
+            footerView.setTitle(feedViewModel.footerTitle)
             table.reloadData()
             refreshControl.endRefreshing()
         case .displayUser(userViewModel: let userViewModel):
             titleView.set(userViewModel: userViewModel)
+        case .dispayFooterLoader:
+            footerView.showLoader()
         }
     }
     
